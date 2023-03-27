@@ -299,7 +299,7 @@ class BulgeGraph(BaseGraph):
         # compile searches for the fasta id, sequence and
         # secondary structure respectively
         id_search = re.compile(r'>(.+)')
-        seq_search = re.compile(r'^([acgutACGUT&]+)$')
+        seq_search = re.compile(r'^([acgutryswkmbdhvnACGUTRYSWKMBDHVN&]+)$')
         stru_search = re.compile(r'^([(){}<>.A-Za-z&\[\]]+)$')
 
         prev_id = None
